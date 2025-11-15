@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Banking System</h1>
+
+      <div class="card">
+        <h2>Create Account</h2>
+        <input id="name" type="text" placeholder="Full Name" />
+        <input id="acc" type="number" placeholder="Account Number" />
+        <input id="balance" type="number" placeholder="Initial Balance" />
+        <button onclick="createAccount()">Create Account</button>
+      </div>
+
+      <div class="card">
+        <h2>Deposit</h2>
+        <input id="dacc" type="number" placeholder="Account Number" />
+        <input id="damount" type="number" placeholder="Amount" />
+        <button onclick="deposit()">Deposit</button>
+      </div>
+
+      <div class="card">
+        <h2>Withdraw</h2>
+        <input id="wacc" type="number" placeholder="Account Number" />
+        <input id="wamount" type="number" placeholder="Amount" />
+        <button onclick="withdraw()">Withdraw</button>
+      </div>
+
+      <div class="card">
+        <h2>Check Balance</h2>
+        <input id="bacc" type="number" placeholder="Account Number" />
+        <button onclick="checkBalance()">Check</button>
+        <p id="balanceResult"></p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
